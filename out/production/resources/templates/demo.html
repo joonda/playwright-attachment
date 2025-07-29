@@ -1,191 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>billing-specification</title>
-  <link rel="stylesheet" href="/css/bootstrap.min.css" />
-  <style>
-      body { font-size: 12pt; max-width: 210mm; max-height: 297mm; padding: 5mm; font-family: '맑은 고딕', 'Malgun Gothic', "apple sd", sans-serif; margin: auto;}
-      th, td { padding: 8px; vertical-align: middle; border: 1px solid gray; word-break: keep-all; text-align: center; }
-      @media print {
-          button { display: none !important; }
-      }
-  </style>
-</head>
-<body>
-<div class="text-end mb-2">
-  <button class="btn btn-outline-dark" onclick="window.print()">
-    🖨️ Print
-  </button>
-</div>
-<div class="d-flex flex-column align-items-center justify-content-center">
-  <div class="fs-1 fw-bold">
-    과 금 명 세 서
-  </div>
-  <div class="fs-6 fw-lighter">
-    (공급받는자 보관용)
-  </div>
-</div>
-
-<table class="table" style="font-size: 12px; table-layout: fixed; margin-bottom: 20px">
-  <colgroup>
-    <col style="width: 10%" />
-    <col/>
-    <col style="width: 10%" />
-    <col/>
-    <col style="width: 10%" />
-    <col/>
-    <col style="width: 10%" />
-    <col/>
-  </colgroup>
-  <thead>
-  <tr>
-    <th colspan="4" rowspan="3" style="vertical-align: middle; font-weight: normal;">
-      <div class="d-flex flex-column align-items-center">
-        <div style="font-size: 14px; margin-bottom: 10px">
-          <span>
-            2025년 07월 29일
-          </span>
-        <div class="gap-4 d-flex align-items-center w-100 justify-content-center">
-          <span>홍길동 귀중</span>
-        </div>
+  <head>
+    <meta charset="UTF-8">
+    <title>billing-specification</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <style>
+        body { font-size: 12pt; max-width: 210mm; max-height: 297mm; padding: 5mm; font-family: '맑은 고딕', 'Malgun Gothic', "apple sd", sans-serif; margin: auto;}
+        th, td { padding: 8px; vertical-align: middle; border: 1px solid gray; word-break: keep-all; text-align: center; }
+        @media print {
+            button { display: none !important; }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="text-end mb-2">
+      <button class="btn btn-outline-dark" onclick="window.print()">
+        🖨️ Print
+      </button>
+    </div>
+    <div class="d-flex flex-column align-items-center justify-content-center">
+      <div class="fs-1 fw-bold">
+        과 금 명 세 서
       </div>
-    </th>
-    <th colspan="4">
-      <div class="gap-3 d-flex align-items-center justify-content-center" style="font-size: 16px; font-weight: normal;">
-        <span>공</span><span>급</span><span>자</span>
+      <div class="fs-6 fw-lighter">
+        (공급받는자 보관용)
       </div>
-    </th>
-  </tr>
-  <tr>
-    <th style="font-weight: normal;">등록번호</th>
-    <th style="font-weight: normal;" colspan="3">
-      <span>123-45-67890</span>
-    </th>
-  </tr>
-  <tr>
-    <th style="font-weight: normal">상호</th>
-    <th style="font-weight: normal">
-      <span>주식회사 예제</span>
-    </th>
-    <th style="font-weight: normal">성명</th>
-    <th style="font-weight: normal">
-      <div class="d-flex align-items-center gap-2">
-        <div style="text-align: left;">
-          <span>김대표</span>
-        </div>
-      </div>
-    </th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>배송처</td>
-    <td colspan="3" style="padding: 0">
-      <span>서울특별시 강남구 테헤란로 123 ABC빌딩 5층</span>
-    </td>
-    <td>사업장</td>
-    <td colspan="3" style="padding: 0;">
-      <span>서울특별시 종로구 종로 1길 45 B타워 8층</span>
-    </td>
-  </tr>
-  <tr>
-    <td>담당자</td>
-    <td>
-      <span>이과장</span>
-    </td>
-    <td>연락처</td>
-    <td>
-      <span>010-1234-5678</span>
-    </td>
-    <td>업태</td>
-    <td>
-      <span>도소매</span>
-    </td>
-    <td>종목</td>
-    <td>
-      <span>컴퓨터 및 주변기기</span>
-    </td>
-  </tr>
-  <tr>
-    <td>특기사항</td>
-    <td colspan="7" style="text-align: left">
-      <span>월 정기 과금</span>
-    </td>
-  </tr>
-  <tr>
-    <td colspan="8" style="text-align: center; font-size: 14px; font-weight: bold">
-          <span>
-              합계금액 ( VAT 포함 ) : ₩ <span>3,300,000</span>
-          </span>
-    </td>
-  </tr>
-  </tbody>
-</table>
+    </div>
 
-<table class="table table-striped" style="table-layout: fixed; font-size: 12px;">
-  <colgroup>
-    <col style="width: 12%" />
-    <col style="width: 20%" />
-    <col style="width: 22%" />
-    <col style="width: 8%" />
-    <col />
-    <col />
-    <col />
-  </colgroup>
-  <thead>
-  <tr>
-    <th>날짜</th>
-    <th>상품명</th>
-    <th>과금기간</th>
-    <th>수량</th>
-    <th>공급가액</th>
-    <th>부가세</th>
-    <th>합계</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-    <td>2025-07-01</td>
-    <td class="text-start">클라우드 서버 이용료</td>
-    <td>2025-07-01 ~ 2025-07-31</td>
-    <td class="text-end">1</td>
-    <td class="text-end">3,000,000</td>
-    <td class="text-end">300,000</td>
-    <td class="text-end">3,300,000</td>
-  </tr>
-  <tr th:each="tableRows : ${#numbers.sequence(1, 17 - 3)}">
-    <td th:each="tableDatas : ${#numbers.sequence(1, 7)}" style="height: 32px;"></td>
-  </tr>
-  <tr>
-    <td class="fw-bold">
-      <span>합계</span>
-    </td>
-    <td th:each="tableDatas : ${#numbers.sequence(2, 6)}" style="height: 32px"></td>
-    <td class="text-end fw-bold">
-      ₩ <span>3,300,000</span>
-    </td>
-  </tr>
-  </tbody>
-</table>
+    <table class="table" style="font-size: 12px; table-layout: fixed; margin-bottom: 20px">
+      <colgroup>
+        <col style="width: 10%" />
+        <col/>
+        <col style="width: 10%" />
+        <col/>
+        <col style="width: 10%" />
+        <col/>
+        <col style="width: 10%" />
+        <col/>
+      </colgroup>
+      <thead>
+      <tr>
+        <th colspan="4" rowspan="3" style="vertical-align: middle; font-weight: normal;">
+          <div class="d-flex flex-column align-items-center">
+            <div style="font-size: 14px; margin-bottom: 10px">
+              <span>
+                2025년 07월 29일
+              </span>
+            </div>
+            <div class="gap-4 d-flex align-items-center w-100 justify-content-center">
+              <span>홍길동 귀중</span>
+            </div>
+          </div>
+        </th>
+        <th colspan="4">
+          <div class="gap-3 d-flex align-items-center justify-content-center" style="font-size: 16px; font-weight: normal;">
+            <span>공</span><span>급</span><span>자</span>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <th style="font-weight: normal;">등록번호</th>
+        <th style="font-weight: normal;" colspan="3">
+          <span>123-45-67890</span>
+        </th>
+      </tr>
+      <tr>
+        <th style="font-weight: normal">상호</th>
+        <th style="font-weight: normal">
+          <span>주식회사 예제</span>
+        </th>
+        <th style="font-weight: normal">성명</th>
+        <th style="font-weight: normal">
+          <div class="d-flex align-items-center gap-2">
+            <div style="text-align: left;">
+              <span>김대표</span>
+            </div>
+          </div>
+        </th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>배송처</td>
+        <td colspan="3" style="padding: 0">
+          <span>서울특별시 강남구 테헤란로 123 ABC빌딩 5층</span>
+        </td>
+        <td>사업장</td>
+        <td colspan="3" style="padding: 0;">
+          <span>서울특별시 종로구 종로 1길 45 B타워 8층</span>
+        </td>
+      </tr>
+      <tr>
+        <td>담당자</td>
+        <td>
+          <span>이과장</span>
+        </td>
+        <td>연락처</td>
+        <td>
+          <span>010-1234-5678</span>
+        </td>
+        <td>업태</td>
+        <td>
+          <span>도소매</span>
+        </td>
+        <td>종목</td>
+        <td>
+          <span>컴퓨터 및 주변기기</span>
+        </td>
+      </tr>
+      <tr>
+        <td>특기사항</td>
+        <td colspan="7" style="text-align: left">
+          <span>월 정기 과금</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8" style="text-align: center; font-size: 14px; font-weight: bold">
+              <span>
+                  합계금액 ( VAT 포함 ) : ₩ <span>3,300,000</span>
+              </span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
 
-<table class="table" style="font-size: 12px; table-layout: fixed">
-  <colgroup>
-    <col style="width: 12%" />
-    <col style="width: 60%" />
-    <col style="width: 12%" />
-  </colgroup>
-  <tr>
-    <td>미수금</td>
-    <td></td>
-    <td>담당자</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td colspan="2">상기품목을 정히 납품함.</td>
-    <td>인수자</td>
-    <td style="text-align: right">(인)</td>
-  </tr>
-</table>
-</body>
+    <table class="table table-striped" style="table-layout: fixed; font-size: 12px;">
+      <colgroup>
+        <col style="width: 12%" />
+        <col style="width: 20%" />
+        <col style="width: 22%" />
+        <col style="width: 8%" />
+        <col />
+        <col />
+        <col />
+      </colgroup>
+      <thead>
+      <tr>
+        <th>날짜</th>
+        <th>상품명</th>
+        <th>과금기간</th>
+        <th>수량</th>
+        <th>공급가액</th>
+        <th>부가세</th>
+        <th>합계</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>2025-07-01</td>
+        <td class="text-start">클라우드 서버 이용료</td>
+        <td>2025-07-01 ~ 2025-07-31</td>
+        <td class="text-end">1</td>
+        <td class="text-end">3,000,000</td>
+        <td class="text-end">300,000</td>
+        <td class="text-end">3,300,000</td>
+      </tr>
+      <tr th:each="tableRows : ${#numbers.sequence(1, 17 - 3)}">
+        <td th:each="tableDatas : ${#numbers.sequence(1, 7)}" style="height: 32px;"></td>
+      </tr>
+      <tr>
+        <td class="fw-bold">
+          <span>합계</span>
+        </td>
+        <td th:each="tableDatas : ${#numbers.sequence(2, 6)}" style="height: 32px"></td>
+        <td class="text-end fw-bold">
+          ₩ <span>3,300,000</span>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+
+    <table class="table" style="font-size: 12px; table-layout: fixed">
+      <colgroup>
+        <col style="width: 12%" />
+        <col style="width: 60%" />
+        <col style="width: 12%" />
+      </colgroup>
+      <tr>
+        <td>미수금</td>
+        <td></td>
+        <td>담당자</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">상기품목을 정히 납품함.</td>
+        <td>인수자</td>
+        <td style="text-align: right">(인)</td>
+      </tr>
+    </table>
+  </body>
 </html>
